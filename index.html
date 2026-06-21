@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO-MATRIX // PREMIUM SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="stark-engine">
+
+    <div class="ambient-grid"></div>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <div class="core-dot"></div>
+            <span class="brand-name">ATLAS // LABS</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">// STACK</a>
+            <a href="#cart-section" class="cart-link">// PIPELINE (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <section class="hero-section">
+            <div class="status-tag"><span class="pulse"></span> DIRECT WHATSAPP ORDER ROUTING</div>
+            <h1 class="hero-title">PREMIUM ARTIFACTS.<br>CASH ON DELIVERY.</h1>
+            <p class="hero-desc">Sleek hardware extensions forged for modern desktop setups. Zero authorization card loops required. Confirm deployment via WhatsApp handshake.</p>
+        </section>
+
+        <section class="bento-grid">
+            
+            <div class="bento-card card-wide">
+                <span class="card-id">LOCKED TIER // 01</span>
+                <div class="card-split">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1616440347437-b1c73416efc2?auto=format&fit=crop&w=600&q=80" alt="Desk Pad">
+                    </div>
+                    <div class="card-details">
+                        <h3>Cybernetic Performance Desk Pad</h3>
+                        <p class="price">240 <span>DH</span></p>
+                        <p class="desc">Textured micro-weave matrix architecture with heavy fluid resistance layers.</p>
+                        <button class="add-to-cart-btn" data-id="1" data-name="Cybernetic Desk Pad" data-price="240">ADD TO MATRIX</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-card">
+                <span class="card-id">CORE LENS // 02</span>
+                <div class="image-frame square">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Mug">
+                </div>
+                <div class="card-details-stacked">
+                    <h3>Encapsulated Matte Black Mug</h3>
+                    <p class="price">120 <span>DH</span></p>
+                    <button class="add-to-cart-btn" data-id="2" data-name="Matte Black Mug" data-price="120">ADD TO MATRIX</button>
+                </div>
+            </div>
+
+            <div class="bento-card">
+                <span class="card-id">RAW STACK // 03</span>
+                <div class="image-frame square">
+                    <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=500&q=80" alt="Notebook">
+                </div>
+                <div class="card-details-stacked">
+                    <h3>Terminal Grid Architect Journal</h3>
+                    <p class="price">90 <span>DH</span></p>
+                    <button class="add-to-cart-btn" data-id="3" data-name="Architect Journal" data-price="90">ADD TO MATRIX</button>
+                </div>
+            </div>
+
+            <div class="bento-card card-wide">
+                <span class="card-id">CNC NODE // 04</span>
+                <div class="card-split">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80" alt="Keycaps">
+                    </div>
+                    <div class="card-details">
+                        <h3>Anodized Core Mechanical Keycaps</h3>
+                        <p class="price">550 <span>DH</span></p>
+                        <p class="desc">Solid CNC milled profiling built explicitly for custom terminal arrays.</p>
+                        <button class="add-to-cart-btn" data-id="4" data-name="CNC Keycaps" data-price="550">ADD TO MATRIX</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="sticky-footer" id="cart-section">
+        <div class="footer-inner">
+            <div class="manifest-status">
+                <span>TOTAL ARTIFACT VALUE:</span>
+                <h2 id="footer-total-price">0 DH</h2>
+            </div>
+            <button class="checkout-trigger-btn" id="open-modal-btn" disabled>INITIALIZE DISPATCH ROUTE</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="checkout-box">
+            <div class="modal-header">
+                <span class="modal-title">// DISPATCH REGISTRY (COD)</span>
+                <span class="modal-close" id="close-modal-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="order-summary-card">
+                    <label>MANIFEST STREAM:</label>
+                    <ul id="summary-items-list"></ul>
+                    <div class="summary-total">AMOUNT DUE: <span id="modal-total-display">0 DH</span></div>
+                </div>
+
+                <form id="wa-checkout-form" class="checkout-form">
+                    <div class="form-group">
+                        <label>FULL CUSTOMER NAME</label>
+                        <input type="text" id="client-name" placeholder="Saad Misbah" required>
+                    </div>
+                    <div class="form-group">
+                        <label>DELIVERY PHONE NUMBER</label>
+                        <input type="tel" id="client-phone" placeholder="06XXXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label>DESTINATION CITY / ADDRESS</label>
+                        <input type="text" id="client-address" placeholder="Maarif, Casablanca" required>
+                    </div>
+                    <button type="submit" class="submit-wa-btn">
+                        <i class="fa-brands fa-whatsapp"></i> EXECUTE WHATSAPP DISPATCH
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
